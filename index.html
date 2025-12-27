@@ -20,6 +20,14 @@
       text-align: center;
     }
 
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
     header h1 {
       margin: 0;
       font-size: 2.5rem;
@@ -27,7 +35,23 @@
 
     header p {
       margin-top: 10px;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    header ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 10px 0;
+      display: inline-block;
+      text-align: left;
+    }
+
+    header ul li {
+      background: rgba(255,255,255,0.2);
+      margin: 5px 0;
+      padding: 5px 10px;
+      border-radius: 5px;
     }
 
     main {
@@ -48,6 +72,11 @@
       justify-content: center;
     }
 
+    a.card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
     .project-card {
       background-color: white;
       border-radius: 10px;
@@ -64,8 +93,8 @@
 
     .project-card img {
       width: 100%;
-      height: 250px; /* fixed height for all images */
-      object-fit: cover; /* fills nicely without distortion */
+      height: 250px;
+      object-fit: cover;
       display: block;
     }
 
@@ -84,16 +113,7 @@
       line-height: 1.5;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #e0e0e0;
-      margin-top: 40px;
-      font-size: 0.9rem;
-    }
-
-    /* Optional: buttons below project cards */
-    .project-card-content a {
+    .project-card-content a.button {
       display: inline-block;
       margin-top: 10px;
       padding: 8px 15px;
@@ -104,45 +124,74 @@
       transition: background 0.3s;
     }
 
-    .project-card-content a:hover {
+    .project-card-content a.button:hover {
       background-color: #005f86;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #e0e0e0;
+      margin-top: 40px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="assets/selfie.jpg" alt="Dhanalakshmi Raja">
     <h1>Dhanalakshmi Raja</h1>
-    <p>Portfolio | Power BI & Data Analysis Projects</p>
+    <p>
+      I have 2 years of experience in Data Analytics and reporting.
+      Skilled in data visualization, dashboard development, and reporting using:
+    </p>
+    <ul>
+      <li>Power BI</li>
+      <li>SQL</li>
+      <li>Advanced Excel</li>
+      <li>Python</li>
+    </ul>
+    <p>
+      Strong analytical and problem-solving skills, with a proactive and continuous learning mindset.
+    </p>
   </header>
 
   <main>
     <h2>Projects</h2>
     <div class="projects">
 
-      <!-- Project 1 -->
-      <div class="project-card">
-        <img src="assets/Retail Portfolio.jpg" alt="Retail Sales Dashboard">
-        <div class="project-card-content">
-          <h3>Project 1: Retail Sales</h3>
-          <p>The retail analysis of coffee shop sales provides a comprehensive view of performance metrics, customer behaviors, and trends. It includes Sales, Orders, Quantity Analysis, Weekday vs. Weekend Sales, Sales by Location, Product, Day and Hour.</p>
-          <p><strong>Tools used:</strong> Power BI, SQL Scripts, Excel</p>
-          <!-- Optional buttons -->
-          <!-- <a href="#">View Dashboard</a> <a href="#">View PDF</a> -->
+      <!-- Project 1: Retail Sales -->
+      <a href="https://github.com/dhanarlakshmi/Retail_Sales_Analysis" target="_blank" class="card-link">
+        <div class="project-card">
+          <img src="assets/Retail Portfolio.jpg" alt="Retail Sales Dashboard">
+          <div class="project-card-content">
+            <h3>Project 1: Retail Sales</h3>
+            <p>
+              Retail Sales project analyzing products, customers, and sales trends.  
+              Includes monthly/daily sales, region-wise and product-wise sales, and customer insights.  
+              Tools used: Power BI, SQL, Excel.
+            </p>
+            <a href="https://github.com/dhanarlakshmi/Retail_Sales_Analysis" target="_blank" class="button">View on GitHub</a>
+          </div>
         </div>
-      </div>
+      </a>
 
-      <!-- Project 2 -->
-      <div class="project-card">
-        <img src="assets/Employee Portfolio.jpg" alt="Employee Performance Analysis">
-        <div class="project-card-content">
-          <h3>Project 2: Employee Performance</h3>
-          <p>Analysis of employee performance metrics to understand KPIs, attendance, and productivity trends. Highlights employee evaluation, performance reports, and data-driven insights.</p>
-          <p><strong>Tools used:</strong> Power BI, SQL, Excel</p>
-          <!-- Optional buttons -->
-          <!-- <a href="#">View Dashboard</a> <a href="#">View PDF</a> -->
+      <!-- Project 2: Employee Performance -->
+      <a href="https://github.com/dhanarlakshmi/Employee_Performance_Analysis" target="_blank" class="card-link">
+        <div class="project-card">
+          <img src="assets/Employee Portfolio.jpg" alt="Employee Performance Analysis">
+          <div class="project-card-content">
+            <h3>Project 2: Employee Performance</h3>
+            <p>
+              Employee Performance analysis dashboard with KPIs, attrition, and productivity trends.  
+              Includes male/female attrition, performance metrics, and employee evaluations.  
+              Tools used: Power BI, SQL, Excel.
+            </p>
+            <a href="https://github.com/dhanarlakshmi/Employee_Performance_Analysis" target="_blank" class="button">View on GitHub</a>
+          </div>
         </div>
-      </div>
+      </a>
 
     </div>
   </main>
