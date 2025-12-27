@@ -1,34 +1,115 @@
-<!-- Project Cards Section -->
-<section class="projects-section" style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhanalakshmi Raja Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .project-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 450px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .project-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .project-card-content {
+      padding: 20px;
+    }
+    .project-card-content h3 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #0077b6;
+    }
+    .project-card-content p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #e0e0e0;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
 
-  <!-- Project 1: Retail Sales Dashboard -->
-  <div class="project-card" style="width: 320px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-    <!-- Replace the placeholder URL in src with the actual downloaded image file URL -->
-    <a href="https://www.freepik.com/free-vector/contextual-advertsing-targeting-concept-marketing-campaign-social-network-advertising-commercial-advertisement-communication-with-customer-idea-isolated-flat-vector-illustration_28694655.htm" target="_blank">
-      <img src="assets/Retail Portfolio.jpg" alt="Retail Sales Dashboard">
+  <header>
+    <h1>Dhanalakshmi Raja</h1>
+    <p>Portfolio | Power BI & Data Analysis Projects</p>
+  </header>
 
+  <main>
+    <h2 style="text-align:center;">Projects</h2>
+    <div class="projects">
+      
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="assets/Retail Portfolio.jpg" alt="Retail Sales Dashboard">
+        <div class="project-card-content">
+          <h3>Project 1: Retail Sales</h3>
+          <p>The retail analysis of coffee shop sales provides a comprehensive view of performance metrics, customer behaviors, and trends. It includes Sales, Orders, Quantity Analysis, Weekday vs. Weekend Sales, Sales by Location, Product, Day and Hour. Tools used: Power BI, SQL Scripts, and Excel.</p>
+        </div>
+      </div>
 
-    </a>
-    <div class="project-info" style="padding: 1rem; background: #fff;">
-      <h3 style="margin: 0 0 0.5rem; font-size: 1.2rem; color: #333;">Retail Sales Dashboard</h3>
-      <p style="margin: 0; font-size: 0.95rem; color: #555;">
-        A comprehensive retail analysis dashboard covering sales trends, region & product performance, and key strategic insights. Tools used: Power BI, Python (for data prep), SQL, Excel.
-      </p>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="assets/Employee Portfolio.jpg" alt="Employee Performance Analysis">
+        <div class="project-card-content">
+          <h3>Project 2: Employee Performance</h3>
+          <p>Analysis of employee performance metrics to understand KPIs, attendance, and productivity trends. This project highlights employee evaluation, performance reports, and data-driven insights. Tools used: Power BI, SQL, and Excel.</p>
+        </div>
+      </div>
+
     </div>
-  </div>
+  </main>
 
-  <!-- Project 2: Employee Performance Analysis -->
-  <div class="project-card" style="width: 320px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-    <!-- Replace the placeholder URL in src with the actual downloaded image file URL -->
-    <a href="https://www.freepik.com/free-vector/kpi-concept-key-performance-indicators-employee-evaluation-testing-form-report-worker-performance-review-staff-management-empolyee-development-isolated-flat-vector-illustration_26432807.htm" target="_blank">
-      <img src="assets/Employee Portfolio.jpg" alt="Employee Performance Analysis">
-    </a>
-    <div class="project-info" style="padding: 1rem; background: #fff;">
-      <h3 style="margin: 0 0 0.5rem; font-size: 1.2rem; color: #333;">Employee Performance Analysis</h3>
-      <p style="margin: 0; font-size: 0.95rem; color: #555;">
-        An analytical dashboard evaluating employee performance, KPI trends, and productivity metrics. Tools used: Power BI, SQL, Excel.
-      </p>
-    </div>
-  </div>
+  <footer>
+    &copy; 2025 Dhanalakshmi Raja. All rights reserved.
+  </footer>
 
-</section>
+</body>
+</html>
