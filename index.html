@@ -12,31 +12,42 @@
       background-color: #f8f8f8;
       color: #333;
     }
+
     header {
       background-color: #0077b6;
       color: white;
       padding: 40px 20px;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
       font-size: 2.5rem;
     }
+
     header p {
       margin-top: 10px;
       font-size: 1.2rem;
     }
+
     main {
       max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
     }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
     .projects {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
     }
+
     .project-card {
       background-color: white;
       border-radius: 10px;
@@ -45,33 +56,56 @@
       overflow: hidden;
       transition: transform 0.3s, box-shadow 0.3s;
     }
+
     .project-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     }
+
     .project-card img {
       width: 100%;
-      height: auto;
+      height: 250px; /* fixed height for all images */
+      object-fit: cover; /* fills nicely without distortion */
       display: block;
     }
+
     .project-card-content {
       padding: 20px;
     }
+
     .project-card-content h3 {
       margin-top: 0;
       font-size: 1.5rem;
       color: #0077b6;
     }
+
     .project-card-content p {
       font-size: 1rem;
       line-height: 1.5;
     }
+
     footer {
       text-align: center;
       padding: 20px;
       background-color: #e0e0e0;
       margin-top: 40px;
       font-size: 0.9rem;
+    }
+
+    /* Optional: buttons below project cards */
+    .project-card-content a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #0077b6;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .project-card-content a:hover {
+      background-color: #005f86;
     }
   </style>
 </head>
@@ -83,15 +117,18 @@
   </header>
 
   <main>
-    <h2 style="text-align:center;">Projects</h2>
+    <h2>Projects</h2>
     <div class="projects">
-      
+
       <!-- Project 1 -->
       <div class="project-card">
         <img src="assets/Retail Portfolio.jpg" alt="Retail Sales Dashboard">
         <div class="project-card-content">
           <h3>Project 1: Retail Sales</h3>
-          <p>The retail analysis of coffee shop sales provides a comprehensive view of performance metrics, customer behaviors, and trends. It includes Sales, Orders, Quantity Analysis, Weekday vs. Weekend Sales, Sales by Location, Product, Day and Hour. Tools used: Power BI, SQL Scripts, and Excel.</p>
+          <p>The retail analysis of coffee shop sales provides a comprehensive view of performance metrics, customer behaviors, and trends. It includes Sales, Orders, Quantity Analysis, Weekday vs. Weekend Sales, Sales by Location, Product, Day and Hour.</p>
+          <p><strong>Tools used:</strong> Power BI, SQL Scripts, Excel</p>
+          <!-- Optional buttons -->
+          <!-- <a href="#">View Dashboard</a> <a href="#">View PDF</a> -->
         </div>
       </div>
 
@@ -100,7 +137,10 @@
         <img src="assets/Employee Portfolio.jpg" alt="Employee Performance Analysis">
         <div class="project-card-content">
           <h3>Project 2: Employee Performance</h3>
-          <p>Analysis of employee performance metrics to understand KPIs, attendance, and productivity trends. This project highlights employee evaluation, performance reports, and data-driven insights. Tools used: Power BI, SQL, and Excel.</p>
+          <p>Analysis of employee performance metrics to understand KPIs, attendance, and productivity trends. Highlights employee evaluation, performance reports, and data-driven insights.</p>
+          <p><strong>Tools used:</strong> Power BI, SQL, Excel</p>
+          <!-- Optional buttons -->
+          <!-- <a href="#">View Dashboard</a> <a href="#">View PDF</a> -->
         </div>
       </div>
 
