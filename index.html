@@ -27,6 +27,15 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
 
+        .project-img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
         header h1 { margin: 10px 0; font-size: 2.8rem; letter-spacing: 1px; }
         header p { font-size: 1.2rem; font-weight: 300; max-width: 700px; margin: auto; }
         
@@ -53,7 +62,7 @@
 <body>
 
 <header>
-    <img src="https://github.com/dhanarlakshmi.png" alt="Dhanalakshmi Raja" class="profile-img">
+    <img src="assets/your-photo.jpg" alt="Dhanalakshmi Raja" class="profile-img">
     
     <h1>Dhanalakshmi Raja</h1>
     <p>Data Analyst @ Atos | SQL, Python & Power BI Expert | Microsoft Fabric | 2+ Years Experience</p>
@@ -85,18 +94,18 @@
     <h2 style="text-align:center; color:#003366; margin-bottom:30px;">Featured Projects</h2>
     
     <div class="project-card">
+        <img src="assets/retail-dashboard.png" alt="Retail Sales Dashboard" class="project-img">
         <h2>Retail Sales Analytics Engine</h2>
         <span class="tag">Power BI</span> <span class="tag">SQL</span> <span class="tag">Advanced Excel</span>
-        <p>A deep-dive analysis of retail sales data to identify growth opportunities. Built complex DAX measures to track Year-over-Year performance and regional profitability trends.</p>
-        <p><strong>Business Impact:</strong> Optimized data extraction using SQL aggregations and provided a clear visual narrative that identified underperforming regions, supporting strategic inventory decisions.</p>
+        <p>A deep-dive analysis of retail sales data using DAX for YoY growth metrics and regional profitability trends.</p>
         <a href="https://github.com/dhanarlakshmi/Retail_Sales_Dashboard_Analysis" target="_blank" class="btn">View Project Details</a>
     </div>
 
     <div class="project-card">
+        <img src="assets/employee-dashboard.png" alt="Employee Performance Dashboard" class="project-img">
         <h2>Employee Performance & Attrition Analysis</h2>
         <span class="tag">Python</span> <span class="tag">Power BI</span> <span class="tag">SQL</span>
-        <p>End-to-end HR Analytics solution focusing on workforce stability. Used Python for robust data cleaning and automated outlier detection in performance scores.</p>
-        <p><strong>Business Impact:</strong> Reduced manual data preparation time by 40% through automated ETL scripts. Designed a dashboard that highlights attrition risks by department and gender, enabling proactive HR interventions.</p>
+        <p>End-to-end HR Analytics solution. Used Python for automated data cleaning and outlier detection.</p>
         <a href="https://github.com/dhanarlakshmi/Employee_Performance" target="_blank" class="btn">View Project Details</a>
     </div>
 </section>
