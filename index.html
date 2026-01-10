@@ -6,66 +6,104 @@
     <title>Dhanalakshmi Raja | Data Analyst Portfolio</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 1000px; margin: auto; padding: 20px; background-color: #f4f7f9; }
-        header { text-align: center; padding: 50px 0; background: #003366; color: white; border-radius: 10px; margin-bottom: 30px; }
-        header h1 { margin: 0; font-size: 2.5rem; }
-        header p { font-size: 1.1rem; opacity: 0.9; }
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px; }
-        .skill-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #0056b3; }
-        .skill-card h3 { margin-top: 0; color: #003366; }
-        .project-card { background: white; padding: 30px; border-radius: 10px; margin-bottom: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        
+        header { 
+            text-align: center; 
+            padding: 40px 20px; 
+            background: #003366; 
+            color: white; 
+            border-radius: 15px; 
+            margin-bottom: 30px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid rgba(255,255,255,0.2);
+            margin-bottom: 20px;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        header h1 { margin: 10px 0; font-size: 2.8rem; letter-spacing: 1px; }
+        header p { font-size: 1.2rem; font-weight: 300; max-width: 700px; margin: auto; }
+        
+        .contact-info { margin-top: 20px; font-size: 0.9rem; color: #cbd5e0; }
+        .contact-info span { margin: 0 15px; }
+
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 40px 0; }
+        .skill-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 5px solid #0056b3; transition: transform 0.3s; }
+        .skill-card:hover { transform: translateY(-5px); }
+        .skill-card h3 { margin-top: 0; color: #003366; font-size: 1.3rem; }
+
+        .project-card { background: white; padding: 35px; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
         .project-card h2 { color: #003366; margin-top: 0; }
-        .tag { display: inline-block; background: #e1ecf4; color: #39739d; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem; margin-right: 5px; font-weight: bold; }
-        .btn { display: inline-block; background: #003366; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 15px; transition: 0.3s; }
-        .btn:hover { background: #0056b3; }
-        footer { text-align: center; padding: 40px; color: #666; font-size: 0.9rem; }
+        
+        .tag { display: inline-block; background: #ebf8ff; color: #2b6cb0; padding: 5px 12px; border-radius: 6px; font-size: 0.85rem; margin-right: 8px; margin-bottom: 10px; font-weight: 600; text-transform: uppercase; }
+        
+        .btn { display: inline-block; background: #003366; color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; margin-top: 20px; font-weight: 600; transition: 0.3s; }
+        .btn:hover { background: #0056b3; box-shadow: 0 4px 12px rgba(0,86,179,0.3); }
+        
+        footer { text-align: center; padding: 60px 20px; color: #718096; border-top: 1px solid #e2e8f0; margin-top: 50px; }
+        footer a { color: #003366; text-decoration: none; font-weight: 700; }
     </style>
 </head>
 <body>
 
 <header>
+    <img src="https://github.com/dhanarlakshmi.png" alt="Dhanalakshmi Raja" class="profile-img">
+    
     <h1>Dhanalakshmi Raja</h1>
-    <p>Data Analyst (Atos) | SQL, Python & Power BI Expert | Microsoft Fabric | 2+ Years Experience</p>
-    <p style="font-size: 0.9rem; margin-top: 10px;">Chennai, India | dhana.r.lakshmi16@gmail.com</p>
+    <p>Data Analyst @ Atos | SQL, Python & Power BI Expert | Microsoft Fabric | 2+ Years Experience</p>
+    
+    <div class="contact-info">
+        <span>📧 dhana.r.lakshmi16@gmail.com</span>
+        <span>📍 Chennai, Tamil Nadu, India</span>
+    </div>
 </header>
 
 <section>
     <div class="skills-grid">
         <div class="skill-card">
             <h3>BI & Visualization</h3>
-            <p>Power BI, Microsoft Fabric, DAX, Advanced Excel, Interactive Dashboards.</p>
+            <p>Power BI, Microsoft Fabric, DAX, Advanced Excel, Data Storytelling, KPI Reporting.</p>
         </div>
         <div class="skill-card">
             <h3>Data Engineering</h3>
-            <p>SQL (Advanced Joins/CTEs), Python (Pandas/NumPy), ETL Pipelines, Control-M.</p>
+            <p>Advanced SQL (CTEs, Window Functions), Python (Pandas, NumPy), ETL Pipelines, Control-M.</p>
         </div>
         <div class="skill-card">
-            <h3>Analytics & Logic</h3>
-            <p>Statistical Analysis, Data Modeling (Star Schema), Stakeholder Reporting, Automation.</p>
+            <h3>Analytical Strategy</h3>
+            <p>Statistical Analysis, Star Schema Data Modeling, Stakeholder Management, Process Automation.</p>
         </div>
     </div>
 </section>
 
 <section id="projects">
+    <h2 style="text-align:center; color:#003366; margin-bottom:30px;">Featured Projects</h2>
+    
     <div class="project-card">
-        <h2>Project 1: Retail Sales Analytics Engine</h2>
+        <h2>Retail Sales Analytics Engine</h2>
         <span class="tag">Power BI</span> <span class="tag">SQL</span> <span class="tag">Advanced Excel</span>
-        <p>Developed a comprehensive retail analytics solution to track sales trends, customer behavior, and product performance. 
-           <strong>Impact:</strong> Optimized data processing by using SQL for aggregations and implemented DAX for YoY growth metrics, providing stakeholders with actionable regional insights.</p>
-        <a href="https://github.com/dhanarlakshmi/Retail_Sales_Dashboard_Analysis" target="_blank" class="btn">View on GitHub</a>
+        <p>A deep-dive analysis of retail sales data to identify growth opportunities. Built complex DAX measures to track Year-over-Year performance and regional profitability trends.</p>
+        <p><strong>Business Impact:</strong> Optimized data extraction using SQL aggregations and provided a clear visual narrative that identified underperforming regions, supporting strategic inventory decisions.</p>
+        <a href="https://github.com/dhanarlakshmi/Retail_Sales_Dashboard_Analysis" target="_blank" class="btn">View Project Details</a>
     </div>
 
     <div class="project-card">
-        <h2>Project 2: Employee Performance & Attrition Analysis</h2>
-        <span class="tag">Python (Pandas)</span> <span class="tag">Power BI</span> <span class="tag">SQL</span>
-        <p>End-to-end HR analytics dashboard analyzing workforce productivity and attrition patterns. 
-           <strong>Impact:</strong> Automated data cleaning using Python, reducing manual prep time by 40%. Built a star-schema data model in Power BI to analyze gender-wise attrition and performance correlations.</p>
-        <a href="https://github.com/dhanarlakshmi/Employee_Performance" target="_blank" class="btn">View on GitHub</a>
+        <h2>Employee Performance & Attrition Analysis</h2>
+        <span class="tag">Python</span> <span class="tag">Power BI</span> <span class="tag">SQL</span>
+        <p>End-to-end HR Analytics solution focusing on workforce stability. Used Python for robust data cleaning and automated outlier detection in performance scores.</p>
+        <p><strong>Business Impact:</strong> Reduced manual data preparation time by 40% through automated ETL scripts. Designed a dashboard that highlights attrition risks by department and gender, enabling proactive HR interventions.</p>
+        <a href="https://github.com/dhanarlakshmi/Employee_Performance" target="_blank" class="btn">View Project Details</a>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 Dhanalakshmi Raja. All rights reserved.</p>
-    <p><a href="https://www.linkedin.com/in/dhana-lakshmi-b31590222" target="_blank" style="color: #003366; text-decoration: none; font-weight: bold;">Connect with me on LinkedIn</a></p>
+    <p>© 2026 Dhanalakshmi Raja. Dedicated to data-driven excellence.</p>
+    <p><a href="https://www.linkedin.com/in/dhana-lakshmi-b31590222" target="_blank">Connect with me on LinkedIn</a></p>
 </footer>
 
 </body>
