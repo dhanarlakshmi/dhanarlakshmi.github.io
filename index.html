@@ -1,15 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanalakshmi Raja | Senior Data Analyst Portfolio</title>
+    <style>
+        /* Professional Styling */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 1000px; margin: auto; padding: 20px; background-color: #f4f7f9; }
+        
+        header { 
+            text-align: center; 
+            padding: 40px 20px; 
+            background: #003366; 
+            color: white; 
+            border-radius: 15px; 
+            margin-bottom: 30px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid rgba(255,255,255,0.2);
+            margin-bottom: 20px;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .project-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+        header h1 { margin: 10px 0; font-size: 2.5rem; letter-spacing: 1px; }
+        header p { font-size: 1.1rem; font-weight: 300; max-width: 800px; margin: auto; line-height: 1.4; }
+        
+        .contact-info { margin-top: 20px; font-size: 0.9rem; color: #cbd5e0; }
+        .contact-info span { margin: 0 15px; }
+        .contact-info a { color: #ebf8ff; text-decoration: none; font-weight: bold; }
+
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 40px 0; }
+        .skill-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 5px solid #0056b3; transition: transform 0.3s; }
+        .skill-card:hover { transform: translateY(-5px); }
+        .skill-card h3 { margin-top: 0; color: #003366; font-size: 1.3rem; }
+
+        .project-card { background: white; padding: 35px; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+        .project-card h2 { color: #003366; margin-top: 0; font-size: 1.8rem; }
+        
+        .tag { display: inline-block; background: #ebf8ff; color: #2b6cb0; padding: 5px 12px; border-radius: 6px; font-size: 0.85rem; margin-right: 8px; margin-bottom: 15px; font-weight: 600; text-transform: uppercase; }
+        
+        .btn { display: inline-block; background: #003366; color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; margin-top: 20px; font-weight: 600; transition: 0.3s; }
+        .btn:hover { background: #0056b3; box-shadow: 0 4px 12px rgba(0,86,179,0.3); }
+        
+        footer { text-align: center; padding: 40px 20px; color: #718096; border-top: 1px solid #e2e8f0; margin-top: 50px; }
+    </style>
+</head>
 <body>
 
 <header>
     <img src="assets/selfie.jpg" alt="Dhanalakshmi Raja" class="profile-img">
-    
     <h1>Dhanalakshmi Raja</h1>
-    <p>Strategic Data Analyst @ Atos | Delivering Actionable Insights through SQL, Python & Power BI | Specializing in Revenue Optimization & Process Automation</p>
+    <p>Strategic Data Analyst @ Atos | SQL, Python & Power BI Expert | Delivering Actionable Insights through Revenue Optimization & Process Automation</p>
     
     <div class="contact-info">
         <span>📧 dhana.r.lakshmi16@gmail.com</span>
         <span>📍 Chennai, India</span>
-        <span>🔗 <a href="https://www.linkedin.com/in/dhana-lakshmi-b31590222" target="_blank" style="color: #cbd5e0;">LinkedIn Profile</a></span>
+        <span>🔗 <a href="https://www.linkedin.com/in/dhana-lakshmi-b31590222" target="_blank">LinkedIn</a></span>
     </div>
 </header>
 
@@ -17,15 +78,15 @@
     <div class="skills-grid">
         <div class="skill-card">
             <h3>Advanced BI & Strategy</h3>
-            <p>Architecting enterprise-level dashboards in Power BI & Microsoft Fabric. Expertise in complex DAX, data modeling (Star Schema), and executive storytelling.</p>
+            <p>Architecting enterprise-level dashboards in Power BI. Expertise in complex DAX, data modeling (Star Schema), and executive storytelling.</p>
         </div>
         <div class="skill-card">
             <h3>Data Engineering & ETL</h3>
-            <p>Developing robust data pipelines using Python (Pandas/NumPy) and Advanced SQL. Automating workflows with Control-M to ensure 100% data reliability.</p>
+            <p>Developing robust data pipelines using Python and Advanced SQL. Automating workflows with Control-M to ensure 100% data reliability.</p>
         </div>
         <div class="skill-card">
-            <h3>Business Intelligence</h3>
-            <p>Identifying root causes and guiding roadmap decisions through statistical analysis, churn modeling, and cross-functional stakeholder collaboration.</p>
+            <h3>Analytical Strategy</h3>
+            <p>Identifying root causes and guiding roadmap decisions through statistical analysis, churn modeling, and stakeholder collaboration.</p>
         </div>
     </div>
 </section>
@@ -34,32 +95,33 @@
     <h2 style="text-align:center; color:#003366; margin-bottom:30px;">Strategic Case Studies</h2>
     
     <div class="project-card">
-        <img src="assets/rfm_portfolio.jpg" alt="RFM Analysis" class="project-img">
+        <img src="assets/rfm_portfolio.jpg" alt="RFM Analysis Dashboard" class="project-img">
         <h2>Customer Segmentation & Churn Risk Mitigation</h2>
-        <span class="tag">Python</span> <span class="tag">Power BI</span> <span class="tag">Predictive Analysis</span>
-        <p><b>Impact:</b> Quantified <b>$224K in revenue-at-risk</b> by developing an automated RFM segmentation pipeline. Translated behavioral data into a strategic roadmap that identified a 76% revenue concentration among top-tier customers.</p>
+        <span class="tag">Python</span> <span class="tag">Power BI</span> <span class="tag">RFM Modeling</span>
+        <p><strong>Impact:</strong> Quantified <strong>$224K in revenue-at-risk</strong> by developing an automated RFM segmentation pipeline. Translated behavioral data into a strategic roadmap that identified a 76% revenue concentration among top-tier customers.</p>
         <a href="https://github.com/dhanarlakshmi/Retail-RFM-Analysis-Dashboard" target="_blank" class="btn">View Case Study</a>
     </div>
 
     <div class="project-card">
-        <img src="assets/retail_portfolio.jpg" alt="Retail Engine" class="project-img">
+        <img src="assets/retail_portfolio.jpg" alt="Retail Sales Dashboard" class="project-img">
         <h2>Retail Sales Analytics & Growth Engine</h2>
         <span class="tag">Advanced SQL</span> <span class="tag">Power BI</span> <span class="tag">ETL</span>
-        <p><b>Impact:</b> Engineered an end-to-end sales tracking engine to identify underperforming regions and growth opportunities. Optimized data retrieval processes using advanced SQL window functions and stored procedures.</p>
+        <p><strong>Impact:</strong> Engineered an end-to-end sales tracking engine to identify underperforming regions and growth opportunities. Optimized data retrieval processes using advanced SQL window functions.</p>
         <a href="https://github.com/dhanarlakshmi/Retail_Sales_Dashboard_Analysis" target="_blank" class="btn">View Technical Docs</a>
     </div>
 
     <div class="project-card">
-        <img src="assets/employee_portfolio.jpg" alt="HR Analytics" class="project-img">
+        <img src="assets/employee_portfolio.jpg" alt="HR Performance Dashboard" class="project-img">
         <h2>HR Intelligence: Performance & Retention Modeling</h2>
         <span class="tag">Python Automation</span> <span class="tag">Statistical Analysis</span>
-        <p><b>Impact:</b> Reduced manual reporting time by automating data cleaning for HR metrics. Delivered insights into employee attrition patterns, allowing leadership to implement data-driven retention strategies.</p>
+        <p><strong>Impact:</strong> Reduced manual reporting time by automating data cleaning for HR metrics. Delivered insights into employee attrition patterns, allowing leadership to implement data-driven retention strategies.</p>
         <a href="https://github.com/dhanarlakshmi/Employee_Performance" target="_blank" class="btn">View Repository</a>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 Dhanalakshmi Raja | Data Analyst</p>
+    <p>© 2026 Dhanalakshmi Raja | Senior Data Analyst Portfolio</p>
 </footer>
 
 </body>
+</html>
